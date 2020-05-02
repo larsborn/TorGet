@@ -94,8 +94,8 @@ if __name__ == '__main__':
             if not os.path.exists(file_name) or args.overwrite_files:
                 with open(file_name, 'wb') as fp:
                     fp.write(content)
-        except requests.exceptions.ConnectionError:
-            logger.error(F'Cannot download "{args.url}".')
+        except requests.exceptions.ConnectionError as e:
+            logger.error(F'Cannot download "{args.url}": {e}.')
 
     except TorGetException as e:
         logger.exception(e)
