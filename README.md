@@ -8,7 +8,7 @@ Requires at least Python 3.7 and the package `requests` to be installed. Fully c
 environment.
 
 ## Example Usage
-After aliasing the script `tor-get.py` to `tget` a session to TODO:
+After aliasing the script `tor-get.py` to `tget` a session to retrieve your own IP may look like this:
 
 ```Batch
 $ tget --debug https://api.ipify.org/
